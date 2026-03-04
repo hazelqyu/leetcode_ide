@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "LeetCode: Pull Problem",
+      "type": "shell",
+      "command": "python3 ${workspaceFolder}/lcide.py pull ${input:leetcodeSlug}",
+      "problemMatcher": []
+    },
+    {
+      "label": "LeetCode: Run (Remote)",
+      "type": "shell",
+      "command": "python3 ${workspaceFolder}/lcide.py run ${input:leetcodeSlug}",
+      "problemMatcher": []
+    },
+    {
+      "label": "LeetCode: Submit",
+      "type": "shell",
+      "command": "python3 ${workspaceFolder}/lcide.py submit ${input:leetcodeSlug}",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "leetcodeSlug",
+      "type": "promptString",
+      "description": "LeetCode slug (example: two-sum)"
+    }
+  ]
+}
